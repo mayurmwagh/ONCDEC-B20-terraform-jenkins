@@ -3,7 +3,7 @@ terraform {
   backend "s3" {
     bucket = "oncdec20-2025-remote-backend"
     key    = "env/terraform.tfstate"
-    region = "us-east-1"
+    region = "us-west-2"
   }
 }
 
