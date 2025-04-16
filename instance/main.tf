@@ -1,3 +1,13 @@
+
+terraform {
+  backend "s3" {
+    bucket = "oncdec20-2025-remote-backend"
+    key    = "env/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
+
+
 resource "aws_instance" "demo" {
     ami = "ami-075686beab831bb7f"
     instance_type = "t2.micro"
